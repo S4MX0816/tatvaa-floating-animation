@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatva floating animation</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="image-container">
+      <img class="background" src="./images/background.png" alt="" />
+      <img class="leafes" src="./images/leafes.png" alt="" />
+      <img class="lady" src="./images/lady.png" alt="" />
+    </div>
+
+    <div class="controls">
+      <div class="control">
+        <label for="duration">Duration</label>
+        <input
+          name="duration"
+          type="number"
+          value="6"
+          onchange="updateTime(event)"
+        />
+      </div>
+      <div class="control">
+        <label for="height">Height</label>
+        <input
+          name="height"
+          type="number"
+          value="10"
+          onchange="updateHeight(event)"
+        />
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>Scroll can also be used to update values</span>
+      <span>Also support fractional values</span>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
